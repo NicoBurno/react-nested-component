@@ -1,0 +1,19 @@
+{
+    "plugins": [
+        "lodash",
+        "transform-class-properties",
+        ["react-css-modules", {
+            "generateScopedName": "[local]_[sha256:hash:base64:5]",
+            "filetypes": {
+                ".less": {
+                    "syntax": "postcss-less"
+                }
+            }
+        }]
+    ],
+    "presets": [
+        "env",
+        "react",
+        "flow"
+    ]
+}
