@@ -12,7 +12,7 @@ type State = {|
 
 export default class App extends React.Component<Props, State> {
     state = {
-        message: ''
+        message: 'Edit me'
     };
 
     handleChangeMessage = (e: SyntheticInputEvent<*>) => {
@@ -27,7 +27,7 @@ export default class App extends React.Component<Props, State> {
                 <strong>
                     app
                 </strong>
-                Edit me
+                {this.state.message}
                 <div>
                     <strong>
                         nested-component in app
